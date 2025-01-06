@@ -39,5 +39,4 @@ class Lesson extends Model
         return $this->belongsToMany(Location::class);
     }
 
-
 }
