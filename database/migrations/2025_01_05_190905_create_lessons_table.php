@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('season_id');
             $table->foreign('season_id')->references('id')->on('seasons')->cascadeOnDelete();
-            $table->unsignedBigInteger('location_id');
+            $table->unsignedBigInteger('loc ation_id');
             $table->foreign('location_id')->references('id')->on('locations')->cascadeOnDelete();
             $table->unsignedBigInteger('course_id');
             $table->foreign('course_id')->references('id')->on('courses')->cascadeOnDelete();
